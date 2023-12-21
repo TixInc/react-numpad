@@ -11,27 +11,11 @@
     "start": "webpack --watch",
     "build": "babel lib -d build",
     "build:watch": "babel lib -w -d build",
-    "lint": "eslint lib/** --fix; exit 0",
-    "lint:watch": "esw -w lib/**",
-    "precommit": "lint-staged",
-    "prepublish": "npm run build",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
     "test": "jest"
-  },
-  "lint-staged": {
-    "*.{js,json,css,md}": [
-      "prettier --single-quote --trailing-comma es5 --print-width 100 --write",
-      "git add"
-    ]
   },
   "author": "Pietro Ghezzi",
   "license": "ISC",
   "devDependencies": {
-    "@storybook/addon-actions": "^4.0.0-alpha.1",
-    "@storybook/addon-knobs": "^3.4.1",
-    "@storybook/addon-links": "^4.0.0-alpha.1",
-    "@storybook/react": "^4.0.0-alpha.1",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.2",
@@ -56,34 +40,32 @@
     "jest": "^22.4.3",
     "jest-styled-components": "^5.0.0",
     "lint-staged": "^7.0.0",
-    "node-sass": "^4.8.3",
     "polished": "^1.9.2",
     "prettier": "^1.11.1",
     "react": "^16.3.0",
     "react-dom": "^16.3.0",
     "react-test-renderer": "^16.3.0",
-    "sass-loader": "^6.0.7",
     "sinon": "^4.4.9",
     "sinon-sandbox": "^1.0.2",
     "style-loader": "^0.20.3",
     "url-loader": "^1.0.1",
-    "webpack": "^4.4.1",
-    "webpack-cli": "^2.0.13"
+    "webpack": "^5.86.0",
+    "webpack-cli": "^5.1.4"
   },
   "peerDependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },
   "dependencies": {
-    "@material-ui/core": "^1.5.0",
-    "color": "^3.0.0",
+    "@material-ui/core": "^4.12.4",
+    "color": "^4.2.3",
     "lodash": "^4.17.5",
-    "moment": "^2.21.0",
+    "moment": "^2.29.4",
     "prop-types": "^15.6.1",
     "react-icons": "2.2.7",
     "react-onclickoutside": "^6.7.1",
     "react-portal": "^4.1.4",
     "react-swipeable": "^4.2.1",
-    "styled-components": "^3.2.3"
+    "styled-components": "^6.0.0-rc.3"
   }
 }
