@@ -1,6 +1,6 @@
 {
   "name": "@tixinc/react-numpad",
-  "version": "3.0.15",
+  "version": "3.0.22",
   "description": "Numpad react component, as number input or time input",
   "main": "build/index.js",
   "repository": {
@@ -25,8 +25,6 @@
     "babel-preset-react": "^6.24.1",
     "chai": "^4.1.2",
     "css-loader": "^0.28.11",
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.9.0",
@@ -40,9 +38,8 @@
     "lint-staged": "^7.0.0",
     "polished": "^1.9.2",
     "prettier": "^1.11.1",
-    "react": "^16.3.0",
-    "react-dom": "^16.3.0",
-    "react-test-renderer": "^16.3.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "sinon": "^4.4.9",
     "sinon-sandbox": "^1.0.2",
     "style-loader": "^0.20.3",
@@ -51,11 +48,35 @@
     "webpack-cli": "^5.1.4"
   },
   "peerDependencies": {
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "overrides": {
+    "@material-ui/core": {
+      "react": "^18.0.0 || ^19.0.0",
+      "react-dom": "^18.0.0 || ^19.0.0",
+      "@types/react": "^19.0.0"
+    },
+    "react-icons": {
+      "react": "^18.0.0 || ^19.0.0",
+      "react-dom": "^18.0.0 || ^19.0.0"
+    },
+    "react-onclickoutside": {
+      "react": "^18.0.0 || ^19.0.0",
+      "react-dom": "^18.0.0 || ^19.0.0"
+    },
+    "react-portal": {
+      "react": "^18.0.0 || ^19.0.0",
+      "react-dom": "^18.0.0 || ^19.0.0"
+    },
+    "react-swipeable": {
+      "react": "^18.0.0 || ^19.0.0",
+      "react-dom": "^18.0.0 || ^19.0.0"
+    }
   },
   "dependencies": {
     "@material-ui/core": "^4.12.4",
+    "@types/react": "^19.1.8",
     "color": "^4.2.3",
     "lodash": "^4.17.5",
     "moment": "^2.29.4",
